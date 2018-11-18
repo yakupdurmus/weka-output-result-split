@@ -17,10 +17,7 @@ namespace weka_result_split
         {
             InitializeComponent();
         }
-
-        // <copyright file="WekaSplit.cs">
-        // Copyright (c) 2012 All Rights Reserved
-        // </copyright>
+        
         // <author>Yakup Durmuş</author>
         // <date>18/11/2018 06:50 </date>
         // <summary>Weka Result Split - Veri madenciliği</summary>
