@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+V2:
+	< 5.199999999999999	-> 3
+	< 13.2	-> 1
+	>= 13.2	-> 2
+(198/215 instances correct)
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         192               89.3023 %
+Kappa statistic                          0.7591
+Mean absolute error                      0.0713
+Root mean squared error                  0.2671
+Relative absolute error                 22.6943 %
+Root relative squared error             67.6555 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,953    0,246    0,899      0,953    0,926      0,740    0,854     0,890     1
+                 0,800    0,028    0,848      0,800    0,824      0,791    0,886     0,711     2
+                 0,700    0,011    0,913      0,700    0,792      0,773    0,845     0,681     3
+Weighted Avg.    0,893    0,178    0,893      0,893    0,890      0,753    0,858     0,832     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 143   5   2 |   a = 1
+   7  28   0 |   b = 2
+   9   0  21 |   c = 3
+

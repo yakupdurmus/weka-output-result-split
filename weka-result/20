@@ -1,0 +1,352 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1549009261 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 5,1,4,6
+
+Filtered Header
+@relation 'R_data_frame-weka.filters.unsupervised.attribute.Remove-V-R5,1,4,6'
+
+@attribute V5 numeric
+@attribute V1 numeric
+@attribute V4 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+V5 < 0.4
+|   V1 < 97.5 : 2 (13/0) [8/0]
+|   V1 >= 97.5
+|   |   V4 < 1.2 : 2 (11/3) [3/1]
+|   |   V4 >= 1.2 : 1 (10/2) [3/0]
+V5 >= 0.4
+|   V4 < 4 : 1 (92/3) [51/5]
+|   V4 >= 4 : 3 (17/0) [7/0]
+
+Size of the tree : 9
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 814476250 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 5,4,3,6
+
+Filtered Header
+@relation 'R_data_frame-weka.filters.unsupervised.attribute.Remove-V-R5,4,3,6'
+
+@attribute V5 numeric
+@attribute V4 numeric
+@attribute V3 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+V3 < 3
+|   V4 < 4
+|   |   V5 < 0.45
+|   |   |   V4 < 0.35 : 2 (2/0) [0/0]
+|   |   |   V4 >= 0.35
+|   |   |   |   V3 < 1.75 : 1 (8/0) [0/0]
+|   |   |   |   V3 >= 1.75
+|   |   |   |   |   V3 < 1.95 : 2 (4/1) [2/0]
+|   |   |   |   |   V3 >= 1.95 : 1 (5/0) [5/4]
+|   |   V5 >= 0.45
+|   |   |   V5 < 4.45 : 1 (78/1) [42/0]
+|   |   |   V5 >= 4.45
+|   |   |   |   V3 < 1.5 : 3 (5/2) [1/0]
+|   |   |   |   V3 >= 1.5 : 1 (8/1) [6/0]
+|   V4 >= 4 : 3 (15/0) [9/0]
+V3 >= 3 : 2 (18/0) [7/1]
+
+Size of the tree : 17
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1922508320 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 4,1,3,6
+
+Filtered Header
+@relation 'R_data_frame-weka.filters.unsupervised.attribute.Remove-V-R4,1,3,6'
+
+@attribute V4 numeric
+@attribute V1 numeric
+@attribute V3 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+V4 < 3.5
+|   V3 < 3.2
+|   |   V1 < 99.5
+|   |   |   V3 < 1.7 : 1 (8/1) [3/0]
+|   |   |   V3 >= 1.7 : 2 (5/0) [3/0]
+|   |   V1 >= 99.5 : 1 (97/4) [52/6]
+|   V3 >= 3.2 : 2 (17/0) [5/0]
+V4 >= 3.5 : 3 (16/0) [9/1]
+
+Size of the tree : 9
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 291353264 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 4,1,5,6
+
+Filtered Header
+@relation 'R_data_frame-weka.filters.unsupervised.attribute.Remove-V-R4,1,5,6'
+
+@attribute V4 numeric
+@attribute V1 numeric
+@attribute V5 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+V4 < 4
+|   V5 < 0.65
+|   |   V1 < 97.5 : 2 (13/0) [8/0]
+|   |   V1 >= 97.5 : 1 (25/10) [10/4]
+|   V5 >= 0.65 : 1 (88/3) [47/3]
+V4 >= 4 : 3 (17/0) [7/0]
+
+Size of the tree : 7
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 599764000 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,5,1,6
+
+Filtered Header
+@relation 'R_data_frame-weka.filters.unsupervised.attribute.Remove-V-R2,5,1,6'
+
+@attribute V2 numeric
+@attribute V5 numeric
+@attribute V1 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+V5 < 0.65
+|   V2 < 11.65 : 1 (14/2) [7/0]
+|   V2 >= 11.65 : 2 (21/0) [14/2]
+V5 >= 0.65
+|   V2 < 5.65 : 3 (20/2) [9/0]
+|   V2 >= 5.65
+|   |   V5 < 9.6 : 1 (85/0) [41/0]
+|   |   V5 >= 9.6 : 3 (3/1) [1/0]
+
+Size of the tree : 9
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 365493013 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,5,3,6
+
+Filtered Header
+@relation 'R_data_frame-weka.filters.unsupervised.attribute.Remove-V-R2,5,3,6'
+
+@attribute V2 numeric
+@attribute V5 numeric
+@attribute V3 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+V2 < 14.05
+|   V2 < 5.65
+|   |   V5 < 2.15 : 1 (2/1) [1/0]
+|   |   V5 >= 2.15 : 3 (18/0) [8/0]
+|   V2 >= 5.65
+|   |   V3 < 2.65 : 1 (98/1) [46/3]
+|   |   V3 >= 2.65
+|   |   |   V5 < 1.15 : 2 (3/0) [4/1]
+|   |   |   V5 >= 1.15 : 1 (2/0) [3/0]
+V2 >= 14.05 : 2 (20/0) [10/2]
+
+Size of the tree : 11
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -2040923512 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,5,4,6
+
+Filtered Header
+@relation 'R_data_frame-weka.filters.unsupervised.attribute.Remove-V-R2,5,4,6'
+
+@attribute V2 numeric
+@attribute V5 numeric
+@attribute V4 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+V4 < 3.55
+|   V5 < 0.4
+|   |   V2 < 10.75 : 1 (9/0) [4/0]
+|   |   V2 >= 10.75 : 2 (24/1) [11/1]
+|   V5 >= 0.4
+|   |   V2 < 5.5
+|   |   |   V5 < 3.25 : 1 (2/0) [1/1]
+|   |   |   V5 >= 3.25 : 3 (2/0) [2/0]
+|   |   V2 >= 5.5 : 1 (88/0) [47/3]
+V4 >= 3.55 : 3 (18/0) [7/1]
+
+Size of the tree : 11
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -706422984 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 5,2,1,6
+
+Filtered Header
+@relation 'R_data_frame-weka.filters.unsupervised.attribute.Remove-V-R5,2,1,6'
+
+@attribute V5 numeric
+@attribute V2 numeric
+@attribute V1 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+V2 < 5.65 : 3 (19/0) [10/2]
+V2 >= 5.65
+|   V2 < 14
+|   |   V5 < 0.25
+|   |   |   V2 < 11.65 : 1 (10/1) [6/1]
+|   |   |   V2 >= 11.65 : 2 (4/0) [1/0]
+|   |   V5 >= 0.25 : 1 (92/1) [43/2]
+|   V2 >= 14 : 2 (18/0) [12/2]
+
+Size of the tree : 9
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1580336078 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 4,1,3,6
+
+Filtered Header
+@relation 'R_data_frame-weka.filters.unsupervised.attribute.Remove-V-R4,1,3,6'
+
+@attribute V4 numeric
+@attribute V1 numeric
+@attribute V3 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+V4 < 4
+|   V3 < 2.95
+|   |   V3 < 1.45 : 1 (27/4) [17/1]
+|   |   V3 >= 1.45
+|   |   |   V1 < 113.5
+|   |   |   |   V4 < 1.45
+|   |   |   |   |   V1 < 99.5
+|   |   |   |   |   |   V3 < 1.7 : 1 (2/0) [1/0]
+|   |   |   |   |   |   V3 >= 1.7 : 2 (3/0) [3/0]
+|   |   |   |   |   V1 >= 99.5 : 1 (27/4) [15/0]
+|   |   |   |   V4 >= 1.45 : 1 (20/0) [5/1]
+|   |   |   V1 >= 113.5 : 1 (33/1) [13/0]
+|   V3 >= 2.95 : 2 (16/0) [9/1]
+V4 >= 4 : 3 (15/0) [9/0]
+
+Size of the tree : 15
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1117376548 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 1,2,5,6
+
+Filtered Header
+@relation 'R_data_frame-weka.filters.unsupervised.attribute.Remove-V-R1,2,5,6'
+
+@attribute V1 numeric
+@attribute V2 numeric
+@attribute V5 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+V5 < 0.45
+|   V2 < 11.55 : 1 (11/1) [6/1]
+|   V2 >= 11.55 : 2 (22/0) [10/0]
+V5 >= 0.45
+|   V2 < 5.65 : 3 (20/2) [9/0]
+|   V2 >= 5.65 : 1 (90/2) [47/2]
+
+Size of the tree : 7
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         189               87.907  %
+Kappa statistic                          0.7199
+Mean absolute error                      0.1035
+Root mean squared error                  0.1984
+Relative absolute error                 32.9239 %
+Root relative squared error             50.2683 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,960    0,308    0,878      0,960    0,917      0,704    0,980     0,992     1
+                 0,629    0,028    0,815      0,629    0,710      0,669    0,986     0,929     2
+                 0,767    0,005    0,958      0,767    0,852      0,838    0,997     0,979     3
+Weighted Avg.    0,879    0,220    0,879      0,879    0,874      0,717    0,983     0,980     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 144   5   1 |   a = 1
+  13  22   0 |   b = 2
+   7   0  23 |   c = 3
+

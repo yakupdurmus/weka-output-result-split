@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomizableFilteredClassifier -F "weka.filters.unsupervised.attribute.RandomProjection -N 10 -R 42 -D Sparse1" -S 1 -W weka.classifiers.lazy.IBk -- -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomizableFilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.unsupervised.attribute.RandomProjection -N 10 -R -1813920991 -D Sparse1
+
+Filtered Header
+@relation R_data_frame-weka.filters.supervised.attribute.NominalToBinary-weka.filters.unsupervised.attribute.RandomProjection-N10-R-1813920991-DSparse1
+
+@attribute K1 numeric
+@attribute K2 numeric
+@attribute K3 numeric
+@attribute K4 numeric
+@attribute K5 numeric
+@attribute K6 numeric
+@attribute K7 numeric
+@attribute K8 numeric
+@attribute K9 numeric
+@attribute K10 numeric
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         200               93.0233 %
+Kappa statistic                          0.8465
+Mean absolute error                      0.0547
+Root mean squared error                  0.2137
+Relative absolute error                 17.3963 %
+Root relative squared error             54.1284 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,967    0,154    0,935      0,967    0,951      0,832    0,926     0,944     1
+                 0,857    0,017    0,909      0,857    0,882      0,861    0,932     0,835     2
+                 0,833    0,011    0,926      0,833    0,877      0,860    0,938     0,798     3
+Weighted Avg.    0,930    0,112    0,930      0,930    0,929      0,841    0,929     0,906     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 145   3   2 |   a = 1
+   5  30   0 |   b = 2
+   5   0  25 |   c = 3
+

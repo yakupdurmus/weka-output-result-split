@@ -1,0 +1,223 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.ClassificationViaRegression -W weka.classifiers.trees.M5P -- -M 4.0
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Classification via Regression
+
+Classifier for class with index 0:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+V2 <= 11.95 : 
+|   V2 <= 6.9 : 
+|   |   V4 <= 2.05 : LM1 (26/48.845%)
+|   |   V4 >  2.05 : LM2 (25/0%)
+|   V2 >  6.9 : 
+|   |   V2 <= 10.55 : LM3 (94/0%)
+|   |   V2 >  10.55 : 
+|   |   |   V1 <= 105.5 : 
+|   |   |   |   V1 <= 97.5 : LM4 (2/0%)
+|   |   |   |   V1 >  97.5 : LM5 (3/0%)
+|   |   |   V1 >  105.5 : LM6 (19/0%)
+V2 >  11.95 : 
+|   V5 <= 0.45 : LM7 (32/0%)
+|   V5 >  0.45 : LM8 (14/36.482%)
+
+LM num: 1
+Class = 
+	-0.0006 * V1 
+	+ 0.1728 * V2 
+	- 0.0049 * V4 
+	- 0.0475 * V5 
+	- 0.0073
+
+LM num: 2
+Class = 
+	-0.0006 * V1 
+	+ 0.0527 * V2 
+	- 0.0049 * V4 
+	- 0.0084 * V5 
+	+ 0.2129
+
+LM num: 3
+Class = 
+	0.0004 * V1 
+	+ 0.0004 * V2 
+	- 0.0039 * V4 
+	- 0.0029 * V5 
+	+ 0.9464
+
+LM num: 4
+Class = 
+	0.0194 * V1 
+	- 0.0042 * V2 
+	- 0.0039 * V4 
+	- 0.0029 * V5 
+	- 1.1166
+
+LM num: 5
+Class = 
+	0.0189 * V1 
+	- 0.0042 * V2 
+	- 0.0039 * V4 
+	- 0.0029 * V5 
+	- 1.0468
+
+LM num: 6
+Class = 
+	0.0064 * V1 
+	- 0.0042 * V2 
+	- 0.0039 * V4 
+	- 0.0029 * V5 
+	+ 0.2983
+
+LM num: 7
+Class = 
+	0.0016 * V1 
+	- 0.0114 * V2 
+	- 0.0086 * V4 
+	+ 0.0731 * V5 
+	+ 0.1766
+
+LM num: 8
+Class = 
+	-0.0049 * V1 
+	- 0.0114 * V2 
+	- 0.0086 * V4 
+	+ 0.1212 * V5 
+	+ 1.3033
+
+Number of Rules : 8
+
+Classifier for class with index 1:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+V5 <= 0.65 : 
+|   V2 <= 13.85 : 
+|   |   V2 <= 10.85 : LM1 (17/0%)
+|   |   V2 >  10.85 : 
+|   |   |   V3 <= 2.6 : LM2 (5/74.932%)
+|   |   |   V3 >  2.6 : LM3 (6/0%)
+|   V2 >  13.85 : LM4 (28/0%)
+V5 >  0.65 : LM5 (159/0%)
+
+LM num: 1
+Class = 
+	-0.0056 * V1 
+	+ 0.0506 * V2 
+	+ 0.0668 * V3 
+	+ 0.0008 * V5 
+	+ 0.1102
+
+LM num: 2
+Class = 
+	-0.012 * V1 
+	+ 0.0557 * V2 
+	+ 0.1322 * V3 
+	+ 0.0008 * V5 
+	+ 0.6983
+
+LM num: 3
+Class = 
+	-0.0106 * V1 
+	+ 0.0557 * V2 
+	+ 0.1297 * V3 
+	+ 0.0008 * V5 
+	+ 0.5975
+
+LM num: 4
+Class = 
+	-0.0006 * V1 
+	+ 0.0285 * V2 
+	+ 0.0148 * V3 
+	+ 0.0008 * V5 
+	+ 0.3716
+
+LM num: 5
+Class = 
+	-0.0002 * V1 
+	+ 0.0037 * V2 
+	+ 0.006 * V3 
+	+ 0.0003 * V5 
+	- 0.0108
+
+Number of Rules : 5
+
+Classifier for class with index 2:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+V2 <= 6.9 : 
+|   V4 <= 2.05 : LM1 (26/64.741%)
+|   V4 >  2.05 : LM2 (25/0%)
+V2 >  6.9 : LM3 (164/0%)
+
+LM num: 1
+Class = 
+	-0.181 * V2 
+	+ 0.0049 * V4 
+	+ 0.0509 * V5 
+	+ 1.0968
+
+LM num: 2
+Class = 
+	-0.0502 * V2 
+	+ 0.0049 * V4 
+	+ 0.0083 * V5 
+	+ 0.857
+
+LM num: 3
+Class = 
+	-0.0013 * V2 
+	+ 0.0018 * V4 
+	+ 0.0014 * V5 
+	+ 0.0135
+
+Number of Rules : 3
+
+
+
+Time taken to build model: 0.12 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         204               94.8837 %
+Kappa statistic                          0.8875
+Mean absolute error                      0.0843
+Root mean squared error                  0.1833
+Relative absolute error                 26.8238 %
+Root relative squared error             46.434  %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,980    0,123    0,948      0,980    0,964      0,877    0,970     0,984     1
+                 0,886    0,006    0,969      0,886    0,925      0,913    0,985     0,949     2
+                 0,867    0,011    0,929      0,867    0,897      0,881    0,996     0,978     3
+Weighted Avg.    0,949    0,088    0,949      0,949    0,948      0,884    0,976     0,978     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 147   1   2 |   a = 1
+   4  31   0 |   b = 2
+   4   0  26 |   c = 3
+

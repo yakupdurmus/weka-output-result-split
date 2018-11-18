@@ -1,0 +1,132 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.MultiClassClassifier -M 0 -R 2.0 -S 1 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+MultiClassClassifier
+
+Classifier 1, using indicator values: Strings: 1 
+Invert: false
+Cols: 1
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable       neg_1
+====================
+V1           -0.0725
+V2            0.3711
+V3             1.315
+V4            1.0827
+V5            0.2364
+Intercept    -2.3412
+
+
+Odds Ratios...
+               Class
+Variable       neg_1
+====================
+V1            0.9301
+V2            1.4494
+V3            3.7248
+V4            2.9527
+V5            1.2667
+
+
+Classifier 2, using indicator values: Strings: 2 
+Invert: false
+Cols: 2
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                              Class
+Variable                      neg_2
+===================================
+V1                           5.8137
+V2                         -43.1437
+V3                         -31.6192
+V4                         -12.5469
+V5                          41.8645
+Intercept                   15.2603
+
+
+Odds Ratios...
+                              Class
+Variable                      neg_2
+===================================
+V1                          334.859
+V2                                0
+V3                                0
+V4                                0
+V5           1.51894809703824282E18
+
+
+Classifier 3, using indicator values: Strings: 3 
+Invert: false
+Cols: 3
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                            Class
+Variable                    neg_3
+=================================
+V1                         1.8887
+V2                        52.8974
+V3                         1.8741
+V4                         0.5441
+V5                       -17.0093
+Intercept                -391.844
+
+
+Odds Ratios...
+                            Class
+Variable                    neg_3
+=================================
+V1                         6.6109
+V2           9.398501651040055E22
+V3                         6.5152
+V4                         1.7231
+V5                              0
+
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         207               96.2791 %
+Kappa statistic                          0.9186
+Mean absolute error                      0.0453
+Root mean squared error                  0.1688
+Relative absolute error                 14.4117 %
+Root relative squared error             42.758  %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,987    0,092    0,961      0,987    0,974      0,911    0,995     0,998     1
+                 0,886    0,000    1,000      0,886    0,939      0,931    0,999     0,995     2
+                 0,933    0,011    0,933      0,933    0,933      0,923    0,997     0,985     3
+Weighted Avg.    0,963    0,066    0,964      0,963    0,962      0,916    0,996     0,995     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 148   0   2 |   a = 1
+   4  31   0 |   b = 2
+   2   0  28 |   c = 3
+

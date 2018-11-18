@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+V2 < 5.85
+|   V5 < 1.85 : 1 (2/1) [2/0]
+|   V5 >= 1.85 : 3 (18/0) [9/1]
+V2 >= 5.85
+|   V2 < 13.85 : 1 (102/4) [52/6]
+|   V2 >= 13.85 : 2 (21/1) [9/1]
+
+Size of the tree : 7
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         188               87.4419 %
+Kappa statistic                          0.7175
+Mean absolute error                      0.11  
+Root mean squared error                  0.2792
+Relative absolute error                 35.0079 %
+Root relative squared error             70.7279 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,940    0,277    0,887      0,940    0,913      0,694    0,845     0,889     1
+                 0,686    0,028    0,828      0,686    0,750      0,711    0,850     0,703     2
+                 0,767    0,022    0,852      0,767    0,807      0,779    0,926     0,701     3
+Weighted Avg.    0,874    0,201    0,872      0,874    0,871      0,709    0,857     0,833     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 141   5   4 |   a = 1
+  11  24   0 |   b = 2
+   7   0  23 |   c = 3
+

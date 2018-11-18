@@ -1,0 +1,50 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.LWL -U 0 -K -1 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" -W weka.classifiers.trees.DecisionStump
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Locally weighted learning
+===========================
+Using classifier: weka.classifiers.trees.DecisionStump
+Using linear weighting kernels
+Using all neighbours
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         188               87.4419 %
+Kappa statistic                          0.7326
+Mean absolute error                      0.137 
+Root mean squared error                  0.2622
+Relative absolute error                 43.6091 %
+Root relative squared error             66.4342 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,907    0,200    0,913      0,907    0,910      0,704    0,880     0,882     1
+                 0,771    0,061    0,711      0,771    0,740      0,687    0,865     0,760     2
+                 0,833    0,016    0,893      0,833    0,862      0,841    0,943     0,906     3
+Weighted Avg.    0,874    0,152    0,877      0,874    0,875      0,720    0,887     0,865     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 136  11   3 |   a = 1
+   8  27   0 |   b = 2
+   5   0  25 |   c = 3
+

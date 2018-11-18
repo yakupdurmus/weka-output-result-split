@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                  Class
+Attribute             1        2        3
+                 (0.69)   (0.17)   (0.14)
+==========================================
+V1
+  mean          110.5317   95.218 121.6698
+  std. dev.        8.106  18.5526  10.8699
+  weight sum         150       35       30
+  precision        1.463    1.463    1.463
+
+V2
+  mean            9.2052  17.7429   3.5989
+  std. dev.       2.0536   4.1121   1.7008
+  weight sum         150       35       30
+  precision       0.2505   0.2505   0.2505
+
+V3
+  mean            1.7384   4.2609   1.0439
+  std. dev.       0.4668   2.2292   0.5592
+  weight sum         150       35       30
+  precision        0.213    0.213    0.213
+
+V4
+  mean            1.3545   0.9442  12.8919
+  std. dev.         0.55   0.5139  12.1521
+  weight sum         150       35       30
+  precision       1.2239   1.2239   1.2239
+
+V5
+  mean            2.4971  -0.0194  17.5071
+  std. dev.       1.9452   0.2557  15.2715
+  weight sum         150       35       30
+  precision       0.6786   0.6786   0.6786
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         208               96.7442 %
+Kappa statistic                          0.9291
+Mean absolute error                      0.0232
+Root mean squared error                  0.1322
+Relative absolute error                  7.3814 %
+Root relative squared error             33.4907 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,987    0,077    0,967      0,987    0,977      0,922    0,992     0,996     1
+                 0,971    0,006    0,971      0,971    0,971      0,966    1,000     0,999     2
+                 0,867    0,005    0,963      0,867    0,912      0,901    0,997     0,982     3
+Weighted Avg.    0,967    0,055    0,967      0,967    0,967      0,926    0,994     0,995     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 148   1   1 |   a = 1
+   1  34   0 |   b = 2
+   4   0  26 |   c = 3
+

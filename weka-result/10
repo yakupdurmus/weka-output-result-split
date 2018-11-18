@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+V2 <= 5.65 : 3
+V2 > 5.65 : 1
+V2 is missing : 1
+
+Class distributions
+
+V2 <= 5.65
+1	2	3	
+0.06896551724137931	0.0	0.9310344827586207	
+V2 > 5.65
+1	2	3	
+0.7956989247311828	0.1881720430107527	0.016129032258064516	
+V2 is missing
+1	2	3	
+0.6976744186046512	0.16279069767441862	0.13953488372093023	
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         164               76.2791 %
+Kappa statistic                          0.4114
+Mean absolute error                      0.2243
+Root mean squared error                  0.3556
+Relative absolute error                 71.364  %
+Root relative squared error             90.0794 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,913    0,585    0,783      0,913    0,843      0,388    0,670     0,779     1
+                 0,543    0,056    0,655      0,543    0,594      0,527    0,844     0,502     2
+                 0,267    0,016    0,727      0,267    0,390      0,394    0,776     0,370     3
+Weighted Avg.    0,763    0,419    0,754      0,763    0,739      0,411    0,713     0,677     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 137  10   3 |   a = 1
+  16  19   0 |   b = 2
+  22   0   8 |   c = 3
+

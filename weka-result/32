@@ -1,0 +1,279 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+V2 <= 5.65 : 3
+V2 > 5.65 : 1
+V2 is missing : 1
+
+Class distributions
+
+V2 <= 5.65
+1	2	3	
+0.06896551724137931	0.0	0.9310344827586207	
+V2 > 5.65
+1	2	3	
+0.7956989247311828	0.1881720430107527	0.016129032258064516	
+V2 is missing
+1	2	3	
+0.6976744186046512	0.16279069767441862	0.13953488372093023	
+
+
+Weight: 1.48
+
+Decision Stump
+
+Classifications
+
+V5 <= 0.6499999999999999 : 2
+V5 > 0.6499999999999999 : 1
+V5 is missing : 1
+
+Class distributions
+
+V5 <= 0.6499999999999999
+1	2	3	
+0.12060301507537685	0.8793969849246231	0.0	
+V5 > 0.6499999999999999
+1	2	3	
+0.7718550106609808	0.0	0.2281449893390192	
+V5 is missing
+1	2	3	
+0.4478571428571428	0.4375000000000001	0.11464285714285712	
+
+
+Weight: 1.55
+
+Decision Stump
+
+Classifications
+
+V2 <= 6.9 : 3
+V2 > 6.9 : 1
+V2 is missing : 1
+
+Class distributions
+
+V2 <= 6.9
+1	2	3	
+0.12765687232548845	0.0	0.8723431276745115	
+V2 > 6.9
+1	2	3	
+0.5750899615468915	0.4249100384531086	-9.272154004704879E-17	
+V2 is missing
+1	2	3	
+0.4067423604898411	0.26503678061445257	0.3282208588957064	
+
+
+Weight: 0.79
+
+Decision Stump
+
+Classifications
+
+V2 <= 11.05 : 1
+V2 > 11.05 : 2
+V2 is missing : 2
+
+Class distributions
+
+V2 <= 11.05
+1	2	3	
+0.5429070267214208	0.0	0.4570929732785793	
+V2 > 11.05
+1	2	3	
+0.11323573607189513	0.8867642639281049	-3.4617234440518905E-17	
+V2 is missing
+1	2	3	
+0.3378070007668674	0.42328956461644707	0.23890343461668542	
+
+
+Weight: 0.88
+
+Decision Stump
+
+Classifications
+
+V2 <= 6.9 : 3
+V2 > 6.9 : 2
+V2 is missing : 3
+
+Class distributions
+
+V2 <= 6.9
+1	2	3	
+0.11741979055887893	0.0	0.882580209441121	
+V2 > 6.9
+1	2	3	
+0.4436170143772203	0.5563829856227797	0.0	
+V2 is missing
+1	2	3	
+0.29291581518498855	0.29933731809066805	0.40774686672434346	
+
+
+Weight: 0.88
+
+Decision Stump
+
+Classifications
+
+V2 <= 6.9 : 3
+V2 > 6.9 : 1
+V2 is missing : 1
+
+Class distributions
+
+V2 <= 6.9
+1	2	3	
+0.24308685160070548	0.0	0.7569131483992946	
+V2 > 6.9
+1	2	3	
+0.658084388015163	0.34191561198483705	-1.33459944467456E-17	
+V2 is missing
+1	2	3	
+0.4999999999999997	0.2116702116375161	0.2883297883624842	
+
+
+Weight: 0.83
+
+Decision Stump
+
+Classifications
+
+V2 <= 11.05 : 1
+V2 > 11.05 : 2
+V2 is missing : 1
+
+Class distributions
+
+V2 <= 11.05
+1	2	3	
+0.6155553470514175	0.0	0.38444465294858254	
+V2 > 11.05
+1	2	3	
+0.24548827222496258	0.7545117277750374	-5.3765891044811427E-17	
+V2 is missing
+1	2	3	
+0.44495236940655264	0.34783409868807647	0.20721353190537098	
+
+
+Weight: 0.75
+
+Decision Stump
+
+Classifications
+
+V5 <= 4.45 : 1
+V5 > 4.45 : 3
+V5 is missing : 1
+
+Class distributions
+
+V5 <= 4.45
+1	2	3	
+0.5850172417653444	0.379159512918491	0.03582324531616475	
+V5 > 4.45
+1	2	3	
+0.07957716923776946	-1.9062200116781046E-17	0.9204228307622305	
+V5 is missing
+1	2	3	
+0.42071266451465417	0.25590525021408095	0.32338208527126483	
+
+
+Weight: 0.82
+
+Decision Stump
+
+Classifications
+
+V5 <= 0.6499999999999999 : 2
+V5 > 0.6499999999999999 : 3
+V5 is missing : 2
+
+Class distributions
+
+V5 <= 0.6499999999999999
+1	2	3	
+0.19700277793097706	0.802997222069023	0.0	
+V5 > 0.6499999999999999
+1	2	3	
+0.4677170359444405	-1.293148865495798E-16	0.5322829640555596	
+V5 is missing
+1	2	3	
+0.32672537139126373	0.4182118659057033	0.25506276270303296	
+
+
+Weight: 0.72
+
+Decision Stump
+
+Classifications
+
+V5 <= 0.45 : 2
+V5 > 0.45 : 1
+V5 is missing : 1
+
+Class distributions
+
+V5 <= 0.45
+1	2	3	
+0.24396982522833063	0.7560301747716693	0.0	
+V5 > 0.45
+1	2	3	
+0.6700242901648313	0.01476658365658081	0.31520912617858776	
+V5 is missing
+1	2	3	
+0.5000000000000009	0.31058044380040095	0.18941955619959827	
+
+
+Weight: 0.87
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         193               89.7674 %
+Kappa statistic                          0.7661
+Mean absolute error                      0.0865
+Root mean squared error                  0.2152
+Relative absolute error                 27.5405 %
+Root relative squared error             54.5202 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,967    0,262    0,895      0,967    0,929      0,751    0,966     0,984     1
+                 0,629    0,006    0,957      0,629    0,759      0,744    0,980     0,892     2
+                 0,867    0,022    0,867      0,867    0,867      0,845    0,991     0,949     3
+Weighted Avg.    0,898    0,186    0,901      0,898    0,893      0,763    0,972     0,964     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 145   1   4 |   a = 1
+  13  22   0 |   b = 2
+   4   0  26 |   c = 3
+

@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.rules.ZeroR
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+ZeroR predicts class value: 1
+Attribute mappings:
+
+Model attributes 	    Incoming attributes
+-----------------	    ----------------
+(numeric) V1     	--> 1 (numeric) V1
+(numeric) V2     	--> 2 (numeric) V2
+(numeric) V3     	--> 3 (numeric) V3
+(numeric) V4     	--> 4 (numeric) V4
+(numeric) V5     	--> 5 (numeric) V5
+(nominal) Class  	--> 6 (nominal) Class
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         150               69.7674 %
+Kappa statistic                          0     
+Mean absolute error                      0.3143
+Root mean squared error                  0.3947
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    1,000    0,698      1,000    0,822      ?        0,495     0,696     1
+                 0,000    0,000    ?          0,000    ?          ?        0,490     0,160     2
+                 0,000    0,000    ?          0,000    ?          ?        0,498     0,139     3
+Weighted Avg.    0,698    0,698    ?          0,698    ?          ?        0,495     0,531     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 150   0   0 |   a = 1
+  35   0   0 |   b = 2
+  30   0   0 |   c = 3
+

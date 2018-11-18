@@ -1,0 +1,325 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.IterativeClassifierOptimizer -W weka.classifiers.meta.LogitBoost -L 50 -P 1 -E 1 -I 1 -F 10 -R 1 -percentage 0.0 -metric RMSE -S 1 -- -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Best value found: 0.13335200821840787
+Best number of iterations found: 8
+
+
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (Class=1)
+
+Decision Stump
+
+Classifications
+
+V2 <= 14.0 : 2.100000000000001
+V2 > 14.0 : -1.1999999999999982
+V2 is missing : 1.6395348837209318
+
+
+	Class 2 (Class=2)
+
+Decision Stump
+
+Classifications
+
+V2 <= 14.0 : -1.3297297297297301
+V2 > 14.0 : 2.699999999999992
+V2 is missing : -0.7674418604651174
+
+
+	Class 3 (Class=3)
+
+Decision Stump
+
+Classifications
+
+V2 <= 5.65 : 2.6896551724137927
+V2 > 5.65 : -1.42741935483871
+V2 is missing : -0.8720930232558144
+
+
+Iteration 2
+	Class 1 (Class=1)
+
+Decision Stump
+
+Classifications
+
+V4 <= 4.0 : 0.633871697451674
+V4 > 4.0 : -1.7635803687953138
+V4 is missing : 0.20188459160528874
+
+
+	Class 2 (Class=2)
+
+Decision Stump
+
+Classifications
+
+V5 <= 0.45 : 1.360686998368963
+V5 > 0.45 : -1.16020755479341
+V5 is missing : -0.312657242509059
+
+
+	Class 3 (Class=3)
+
+Decision Stump
+
+Classifications
+
+V4 <= 4.0 : -0.8067683235296057
+V4 > 4.0 : 1.8721641328216219
+V4 is missing : -0.034887508284948666
+
+
+Iteration 3
+	Class 1 (Class=1)
+
+Decision Stump
+
+Classifications
+
+V3 <= 2.6500000000000004 : 0.3776858209379052
+V3 > 2.6500000000000004 : -1.8077198663191898
+V3 is missing : -0.013566109227575783
+
+
+	Class 2 (Class=2)
+
+Decision Stump
+
+Classifications
+
+V3 <= 2.6500000000000004 : -0.9206186126146964
+V3 > 2.6500000000000004 : 1.9346533459199962
+V3 is missing : 5.618592069872453E-4
+
+
+	Class 3 (Class=3)
+
+Decision Stump
+
+Classifications
+
+V5 <= 4.45 : -0.8791196630746116
+V5 > 4.45 : 1.5338410207323696
+V5 is missing : 0.024536672340116496
+
+
+Iteration 4
+	Class 1 (Class=1)
+
+Decision Stump
+
+Classifications
+
+V2 <= 6.55 : -1.1768522058834796
+V2 > 6.55 : 0.5192666907953652
+V2 is missing : 0.07810169258797832
+
+
+	Class 2 (Class=2)
+
+Decision Stump
+
+Classifications
+
+V1 <= 99.5 : 1.3748057588359026
+V1 > 99.5 : -0.8859226340047658
+V1 is missing : -0.265062254330153
+
+
+	Class 3 (Class=3)
+
+Decision Stump
+
+Classifications
+
+V2 <= 6.9 : 1.1734215833439001
+V2 > 6.9 : -1.0457377681391182
+V2 is missing : 0.12109077116499568
+
+
+Iteration 5
+	Class 1 (Class=1)
+
+Decision Stump
+
+Classifications
+
+V5 <= 0.45 : -0.9116975444283355
+V5 > 0.45 : 0.5951185735729534
+V5 is missing : 0.07027967834678744
+
+
+	Class 2 (Class=2)
+
+Decision Stump
+
+Classifications
+
+V5 <= 0.6499999999999999 : 0.9636397405131273
+V5 > 0.6499999999999999 : -1.2008674625721445
+V5 is missing : 0.15363884849111265
+
+
+	Class 3 (Class=3)
+
+Decision Stump
+
+Classifications
+
+V5 <= 7.949999999999999 : -0.7410225449560083
+V5 > 7.949999999999999 : 1.6850056043937445
+V5 is missing : -0.3278910019387414
+
+
+Iteration 6
+	Class 1 (Class=1)
+
+Decision Stump
+
+Classifications
+
+V2 <= 4.0 : -1.868844094919408
+V2 > 4.0 : 0.2814395135405995
+V2 is missing : 0.08221074483840983
+
+
+	Class 2 (Class=2)
+
+Decision Stump
+
+Classifications
+
+V2 <= 11.05 : -1.4002847718565619
+V2 > 11.05 : 0.7216738281645559
+V2 is missing : -0.3349251975079623
+
+
+	Class 3 (Class=3)
+
+Decision Stump
+
+Classifications
+
+V2 <= 4.0 : 1.865989607590897
+V2 > 4.0 : -0.18864630310377417
+V2 is missing : 0.21815970239774543
+
+
+Iteration 7
+	Class 1 (Class=1)
+
+Decision Stump
+
+Classifications
+
+V5 <= 4.65 : 0.3362480402338423
+V5 > 4.65 : -1.0378555903488529
+V5 is missing : -0.02498267728945946
+
+
+	Class 2 (Class=2)
+
+Decision Stump
+
+Classifications
+
+V4 <= 1.15 : 0.9720818788047989
+V4 > 1.15 : -1.0704755913913693
+V4 is missing : -0.12697610613526855
+
+
+	Class 3 (Class=3)
+
+Decision Stump
+
+Classifications
+
+V5 <= 4.45 : -0.8599940252857843
+V5 > 4.45 : 1.0368883148249224
+V5 is missing : 0.1888766311290679
+
+
+Iteration 8
+	Class 1 (Class=1)
+
+Decision Stump
+
+Classifications
+
+V1 <= 97.5 : -1.4760361663797124
+V1 > 97.5 : 0.3302635468984219
+V1 is missing : 0.110741024075485
+
+
+	Class 2 (Class=2)
+
+Decision Stump
+
+Classifications
+
+V1 <= 97.5 : 1.5850804560152136
+V1 > 97.5 : -0.33529929125482205
+V1 is missing : 0.10038020656989242
+
+
+	Class 3 (Class=3)
+
+Decision Stump
+
+Classifications
+
+V3 <= 1.45 : 0.517673705231683
+V3 > 1.45 : -1.036964172063197
+V3 is missing : -0.3114841575312925
+
+Number of performed iterations: 8
+
+
+Time taken to build model: 0.34 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         201               93.4884 %
+Kappa statistic                          0.8543
+Mean absolute error                      0.0631
+Root mean squared error                  0.1942
+Relative absolute error                 20.0672 %
+Root relative squared error             49.2036 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,980    0,169    0,930      0,980    0,955      0,844    0,982     0,992     1
+                 0,800    0,011    0,933      0,800    0,862      0,841    0,990     0,952     2
+                 0,867    0,005    0,963      0,867    0,912      0,901    0,995     0,974     3
+Weighted Avg.    0,935    0,121    0,935      0,935    0,934      0,851    0,985     0,983     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 147   2   1 |   a = 1
+   7  28   0 |   b = 2
+   4   0  26 |   c = 3
+

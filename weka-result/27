@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.supervised.attribute.Discretize -R first-last -precision 6" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.J48 -C 0.25 -M 2 on data filtered through weka.filters.supervised.attribute.Discretize -R first-last -precision 6
+
+Filtered Header
+@relation R_data_frame-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+
+@attribute V1 {'\'(-inf-89.5]\'','\'(89.5-99.5]\'','\'(99.5-117.5]\'','\'(117.5-133.5]\'','\'(133.5-inf)\''}
+@attribute V2 {'\'(-inf-5.65]\'','\'(5.65-12.65]\'','\'(12.65-16.25]\'','\'(16.25-inf)\''}
+@attribute V3 {'\'(-inf-1.15]\'','\'(1.15-2.95]\'','\'(2.95-inf)\''}
+@attribute V4 {'\'(-inf-4]\'','\'(4-inf)\''}
+@attribute V5 {'\'(-inf-0.65]\'','\'(0.65-4.45]\'','\'(4.45-7.95]\'','\'(7.95-inf)\''}
+@attribute Class {1,2,3}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+V2 = '(-inf-5.65]': 3 (29.0/2.0)
+V2 = '(5.65-12.65]': 1 (146.0/6.0)
+V2 = '(12.65-16.25]'
+|   V5 = '(-inf-0.65]': 2 (12.0/2.0)
+|   V5 = '(0.65-4.45]': 1 (6.0)
+|   V5 = '(4.45-7.95]': 2 (0.0)
+|   V5 = '(7.95-inf)': 2 (0.0)
+V2 = '(16.25-inf)': 2 (22.0)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	9
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         195               90.6977 %
+Kappa statistic                          0.7989
+Mean absolute error                      0.0788
+Root mean squared error                  0.2444
+Relative absolute error                 25.083  %
+Root relative squared error             61.9101 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,940    0,169    0,928      0,940    0,934      0,778    0,899     0,937     1
+                 0,771    0,017    0,900      0,771    0,831      0,804    0,899     0,757     2
+                 0,900    0,032    0,818      0,900    0,857      0,834    0,941     0,686     3
+Weighted Avg.    0,907    0,125    0,908      0,907    0,906      0,790    0,905     0,873     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 141   3   6 |   a = 1
+   8  27   0 |   b = 2
+   3   0  27 |   c = 3
+

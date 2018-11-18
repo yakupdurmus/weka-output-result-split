@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.PART -M 2 -C 0.25 -Q 1
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+PART decision list
+------------------
+
+V4 <= 3.7 AND
+V3 <= 2.9 AND
+V2 <= 14.3 AND
+V2 > 5.3 AND
+V1 > 95: 1 (142.0/1.0)
+
+V5 <= 0.8: 2 (35.0)
+
+V2 <= 7.1 AND
+V5 > 1.8: 3 (28.0)
+
+: 1 (10.0/1.0)
+
+Number of Rules  : 	4
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         198               92.093  %
+Kappa statistic                          0.8261
+Mean absolute error                      0.0595
+Root mean squared error                  0.2266
+Relative absolute error                 18.9323 %
+Root relative squared error             57.4052 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,960    0,169    0,929      0,960    0,944      0,810    0,908     0,932     1
+                 0,800    0,017    0,903      0,800    0,848      0,823    0,894     0,777     2
+                 0,867    0,016    0,897      0,867    0,881      0,863    0,979     0,847     3
+Weighted Avg.    0,921    0,123    0,920      0,921    0,920      0,819    0,916     0,895     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 144   3   3 |   a = 1
+   7  28   0 |   b = 2
+   4   0  26 |   c = 3
+

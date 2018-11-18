@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 215
+Number of Rules : 21
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 22
+	Merit of best subset found:   97.209
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 2,3,5,6
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         194               90.2326 %
+Kappa statistic                          0.7853
+Mean absolute error                      0.1218
+Root mean squared error                  0.2405
+Relative absolute error                 38.7564 %
+Root relative squared error             60.9353 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,947    0,200    0,916      0,947    0,931      0,765    0,931     0,962     1
+                 0,771    0,011    0,931      0,771    0,844      0,822    0,919     0,827     2
+                 0,833    0,032    0,806      0,833    0,820      0,790    0,950     0,762     3
+Weighted Avg.    0,902    0,146    0,903      0,902    0,901      0,777    0,932     0,912     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 142   2   6 |   a = 1
+   8  27   0 |   b = 2
+   5   0  25 |   c = 3
+

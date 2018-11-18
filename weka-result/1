@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     R_data_frame
+Instances:    215
+Attributes:   6
+              V1
+              V2
+              V3
+              V4
+              V5
+              Class
+Test mode:    3-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=6 #classindex=5
+Network structure (nodes followed by parents)
+V1(5): Class 
+V2(4): Class 
+V3(3): Class 
+V4(2): Class 
+V5(4): Class 
+Class(3): 
+LogScore Bayes: -771.6590869702856
+LogScore BDeu: -855.8769433526419
+LogScore MDL: -873.2519031263861
+LogScore ENTROPY: -763.153823549769
+LogScore AIC: -804.153823549769
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         199               92.5581 %
+Kappa statistic                          0.8354
+Mean absolute error                      0.0496
+Root mean squared error                  0.1872
+Relative absolute error                 15.7733 %
+Root relative squared error             47.4234 %
+Total Number of Instances              215     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,967    0,169    0,929      0,967    0,948      0,821    0,981     0,991     1
+                 0,829    0,011    0,935      0,829    0,879      0,859    0,990     0,958     2
+                 0,833    0,016    0,893      0,833    0,862      0,841    0,992     0,961     3
+Weighted Avg.    0,926    0,122    0,925      0,926    0,925      0,830    0,984     0,982     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 145   2   3 |   a = 1
+   6  29   0 |   b = 2
+   5   0  25 |   c = 3
+
