@@ -191,7 +191,7 @@ namespace weka_result_split
                 listVeri[i] = listVeri[i].Replace("|", "").Replace("<--", "");
             }
 
-            string htmlveri = "<h2>Katışık Matris</h2><table border=\"1\" style=\"border-collapse: collapse; width:100%; text-align:center;\">";
+            string htmlveri = "<h2>Karışıklık matrisi</h2><table border=\"1\" style=\"border-collapse: collapse; width:100%; text-align:center;\">";
 
             for (int i = 0; i < listVeri.Count - 3; i = i + 4)
             {
